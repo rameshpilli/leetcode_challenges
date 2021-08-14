@@ -1,7 +1,9 @@
 x = -121
 
-# print(str(x) == str(x)[::-1])  solution using strings
+# solution using strings
+# print(str(x) == str(x)[::-1])  
 
+##
 if x<0 or (x>0 and x%10 ==0):    # if x less than 0 or x is >0 and last number is 0 , it cannot be a palindrome
     print(False)
 
