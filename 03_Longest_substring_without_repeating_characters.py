@@ -1,14 +1,14 @@
 s = "abcabcbb"
 
-l = 0 
-d = set()
-res = 0
-for r in range(len(s)):
-    while s[r] in d:
-        d.remove(s[l])
-        l += 1
-    d.add(s[r])
-    res = max(res , r-l+1)
+left = 0 
+d = set() ##set to remove duplicates
+result = 0
+for right in range(len(s)):
+    while s[right] in d:
+        d.remove(s[left])
+        left += 1
+    d.add(s[right])
+    result = max(result , right-left+1)
 
 #3
-print(res)
+print(result)
